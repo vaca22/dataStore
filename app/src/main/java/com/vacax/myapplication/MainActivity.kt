@@ -14,6 +14,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
@@ -41,11 +42,11 @@ class MainActivity : AppCompatActivity() {
 
         fuckx.launch {
             Log.e("fuckyou","ggx!!")
-            dataStore.edit {
+            dataStore.data.map {
                 Log.e("fuckyou","ggx!!")
                 val ggx=it[gg]
                 Log.e("fuckyou",ggx!!)
-            }
+            }.first()
         }
 
     }
