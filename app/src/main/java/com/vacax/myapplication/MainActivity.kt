@@ -47,6 +47,10 @@ class MainActivity : AppCompatActivity() {
                 val ggx=it[gg]
                 Log.e("fuckyou",ggx!!)
             }.first()
+
+            dataStore.data.first{
+
+            }
         }
 
     }
