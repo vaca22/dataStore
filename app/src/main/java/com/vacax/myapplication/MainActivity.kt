@@ -41,10 +41,10 @@ class MainActivity : AppCompatActivity() {
 
         fuckx.launch {
             Log.e("fuckyou","ggx!!")
-            dataStore.data.map {
+            dataStore.edit {
                 Log.e("fuckyou","ggx!!")
-//                val ggx=it[gg]
-//                Log.e("fuckyou",ggx!!)
+                val ggx=it[gg]
+                Log.e("fuckyou",ggx!!)
             }
         }
 
